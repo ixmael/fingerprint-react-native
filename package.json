@@ -1,5 +1,5 @@
 {
-  "name": "bayonetio-react-native-mobile",
+  "name": "ixmael-example",
   "version": "0.1.0",
   "description": "test",
   "main": "lib/commonjs/index",
@@ -42,7 +42,6 @@
     "android"
   ],
   "repository": "https://github.com",
-  "author": "bayonet <ismael.ramos@bayonet.iio> (https://bayonet.io)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/issues"
