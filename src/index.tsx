@@ -3,7 +3,7 @@ import {
   Platform,
 } from 'react-native';
 
-import {
+import type {
   IFingerprintService,
 } from './domain';
 
