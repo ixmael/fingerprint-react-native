@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E555C0D2413F4C50049A1A2 /* FingerprintMobile.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* FingerprintMobile.m */; };
-		F4FF95D7245B92E800C19C63 /*  FingerprintMobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /*  FingerprintMobile.swift */; };
+		8C5F34F129B4575600FD8AB7 /* Fingerprint in Frameworks */ = {isa = PBXBuildFile; productRef = 8C5F34F029B4575600FD8AB7 /* Fingerprint */; };
+		F4FF95D7245B92E800C19C63 /* FingerprintMobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* FingerprintMobile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C5F34F129B4575600FD8AB7 /* Fingerprint in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +76,9 @@
 			dependencies = (
 			);
 			name = FingerprintMobile;
+			packageProductDependencies = (
+				8C5F34F029B4575600FD8AB7 /* Fingerprint */,
+			);
 			productName = RCTDataManager;
 			productReference = 134814201AA4EA6300B7C361 /* libFingerprintMobile.a */;
 			productType = "com.apple.product-type.library.static";
@@ -102,6 +106,9 @@
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
+			packageReferences = (
+				8C5F34EF29B4575600FD8AB7 /* XCRemoteSwiftPackageReference "fingerprint-ios-sdk" */,
+			);
 			productRefGroup = 58B511D21A9E6C8500147676;
 			projectDirPath = "";
 			projectRoot = "";
@@ -117,7 +124,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4FF95D7245B92E800C19C63 /* FingerprintMobile.swift in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* FingerprintMobile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +284,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C5F34EF29B4575600FD8AB7 /* XCRemoteSwiftPackageReference "fingerprint-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ixmael/fingerprint-ios-sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C5F34F029B4575600FD8AB7 /* Fingerprint */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C5F34EF29B4575600FD8AB7 /* XCRemoteSwiftPackageReference "fingerprint-ios-sdk" */;
+			productName = Fingerprint;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 58B511D31A9E6C8500147676 /* Project object */;
 }

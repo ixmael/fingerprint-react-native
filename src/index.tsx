@@ -40,7 +40,7 @@ const FingerprintService = (apiKey: string): IFingerprintService => {
      * parses the string to JSON.
      * @returns a token Promise
      */
-    analyze: (): Promise<Token> => {
+    analyze: async (): Promise<Token> => {
       return FingerprintMobile
         .analyze(apiKey)
         .then((tokenAsJSONString: string) => {
