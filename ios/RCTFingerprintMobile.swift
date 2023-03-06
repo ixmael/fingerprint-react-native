@@ -1,13 +1,14 @@
 import Fingerprint
 
-@objc(FingerprintMobile)
-class FingerprintMobile: NSObject {
+@objc(RCTFingerprintMobile)
+class RCTFingerprintMobile: NSObject {
 
   @objc(analyze:withResolver:withRejecter:)
   func analyze(apiKey: String, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
     print("swift", apiKey)
       
-      Task {
+    /*
+      Task.inits {
           do {
               let service = try FingerprintService(apiKey: apiKey)
               
@@ -16,10 +17,10 @@ class FingerprintMobile: NSObject {
               reject(error)
           }
       }
-    
+    */
     let token = """
     {
-      "bayonetID":"probando"
+      "bayonetID":"test"
     }
     """
     resolve(token)

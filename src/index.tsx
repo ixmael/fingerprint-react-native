@@ -28,12 +28,15 @@ const FingerprintMobile = NativeModules.FingerprintMobile
     }
   );
 
+console.log('native b', FingerprintMobile);
+
 /**
  * Fingerprint is the
  * @param apiKey is the client API KEY
  * @returns
  */
 const FingerprintService = (apiKey: string): IFingerprintService => {
+  console.log('native fingerprintservice', FingerprintMobile);
   return {
     /**
      * Generate a Token Device from the backend managed by android module and
